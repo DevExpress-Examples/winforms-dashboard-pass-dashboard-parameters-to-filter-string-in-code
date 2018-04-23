@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataConnections>
+    <DataConnection Name="nwindConnection" ProviderKey="Access97">
+      <Parameters>
+        <Parameter Name="database" Value="..\..\Data\nwind.mdb" />
+        <Parameter Name="read only" Value="1" />
+        <Parameter Name="generateConnectionHelper" Value="false" />
+      </Parameters>
+    </DataConnection>
+  </DataConnections>
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Data Source 1">
+      <DataProvider DataConnection="nwindConnection" SupportSql="true">
+        <Selection>
+          <Table Name="SalesPerson">
+            <Columns>
+              <Column Name="OrderID" />
+              <Column Name="Country" />
+              <Column Name="FirstName" />
+              <Column Name="LastName" />
+              <Column Name="ProductName" />
+              <Column Name="CategoryName" />
+              <Column Name="OrderDate" />
+              <Column Name="UnitPrice" />
+              <Column Name="Quantity" />
+              <Column Name="Discount" />
+              <Column Name="Extended Price" />
+              <Column Name="Sales Person" />
+            </Columns>
+          </Table>
+          <Filters>
+            <Filter TableName="SalesPerson" FilterString="" />
+          </Filters>
+        </Selection>
+      </DataProvider>
+    </DataSource>
+    <DataSource ComponentName="dataSource2" Name="Data Source 2">
+      <DataProvider DataConnection="nwindConnection" SupportSql="true">
+        <Selection>
+          <Table Name="Categories">
+            <Columns>
+              <Column Name="CategoryID" />
+              <Column Name="CategoryName" />
+              <Column Name="Description" />
+              <Column Name="Picture" />
+              <Column Name="Icon_17" />
+              <Column Name="Icon_25" />
+            </Columns>
+          </Table>
+        </Selection>
+      </DataProvider>
+    </DataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="Quantity" Name="DataItem0" />
+        <Dimension DataMember="Sales Person" Name="DataItem1" />
+        <Dimension DataMember="CategoryName" Name="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value Name="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Pivot 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="Extended Price" Name="DataItem0" />
+        <Dimension DataMember="CategoryName" Name="DataItem1" />
+        <Dimension DataMember="OrderDate" Name="DataItem2" />
+        <Dimension DataMember="ProductName" Name="DataItem3" />
+      </DataItems>
+      <Columns>
+        <Column Name="DataItem2" />
+      </Columns>
+      <Rows>
+        <Row Name="DataItem1" />
+        <Row Name="DataItem3" />
+      </Rows>
+      <Values>
+        <Value Name="DataItem0" />
+      </Values>
+      <AutoExpandRowGroups>true</AutoExpandRowGroups>
+    </Pivot>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem Weight="0.5" DashboardItem="chartDashboardItem1" />
+      <LayoutItem Weight="0.5" DashboardItem="pivotDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
