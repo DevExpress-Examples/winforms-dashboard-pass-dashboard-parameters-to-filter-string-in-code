@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_Parameters/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_Parameters/Form1.vb))
 <!-- default file list end -->
-# How to pass a dashboard parameter to a filter string in code
+# How to Pass a Dashboard Parameter to a Filter String
 
 
 This example demonstrates how to [create a new dashboard parameter](https://docs.devexpress.com/Dashboard/16169) and [pass](https://docs.devexpress.com/Dashboard/16170) it to a dashboard item filter string.
@@ -11,7 +11,7 @@ This example demonstrates how to [create a new dashboard parameter](https://docs
 
 In this example, the dashboard data source contains two queries - the **SalesPerson** query is used for data visualization while the **Categories** query provides values for the dashboard parameter.
 
-The dashboard parameter is included into dashboard item's filter expressions. Thus parameter selection forces the dashboard to display data according to the selected values.
+The dashboard parameter is included into the dashboard item's filter expressions. When the parameter changes, the dashboard updates the displayed data.
 
 ![](/images/screenshot.png)
 
