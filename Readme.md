@@ -25,7 +25,6 @@ API in this example:
 ## Documentation
 
 * [Dashboard Parameters](https://docs.devexpress.com/Dashboard/116918)
-* [Member Table: Dashboard Parameters](https://docs.devexpress.com/Dashboard/17505)
 
 ## More Examples
 
