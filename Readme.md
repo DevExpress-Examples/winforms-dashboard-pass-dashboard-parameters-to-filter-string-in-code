@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_Parameters/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_Parameters/Form1.vb))
 <!-- default file list end -->
-# How to Pass a Dashboard Parameter to a Filter String
+# Dashboard for WinForms - How to Pass a Dashboard Parameter to a Filter String
 
 
 This example demonstrates how to [create a new dashboard parameter](https://docs.devexpress.com/Dashboard/16169) and [pass](https://docs.devexpress.com/Dashboard/16170) it to a dashboard item filter string.
