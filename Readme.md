@@ -3,16 +3,9 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5117)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [Form1.cs](./CS/Dashboard_Parameters/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_Parameters/Form1.vb))
-<!-- default file list end -->
 # Dashboard for WinForms - How to Pass a Dashboard Parameter to a Filter String
 
-
 This example demonstrates how to [create a new dashboard parameter](https://docs.devexpress.com/Dashboard/16169) and [pass](https://docs.devexpress.com/Dashboard/16170) it to a dashboard item filter string.
-
 
 In this example, the dashboard data source contains two queries - the **SalesPerson** query is used for data visualization while the **Categories** query provides values for the dashboard parameter.
 
@@ -20,7 +13,11 @@ The dashboard parameter is included into the dashboard item's filter expressions
 
 ![](/images/screenshot.png)
 
-API in this example:
+## Files to Review:
+
+* [Form1.cs](./CS/Dashboard_Parameters/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_Parameters/Form1.vb))
+
+## API
 
 * [DashboardParameter ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardParameter) class
 * [DynamicListLookUpSettings](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DynamicListLookUpSettings) class
@@ -29,8 +26,8 @@ API in this example:
 
 ## Documentation
 
-- [Pass a Dashboard Parameter to a Filter String](https://docs.devexpress.com/Dashboard/117087)
 - [Dashboard Parameters](https://docs.devexpress.com/Dashboard/116918)
+- [Reference Dashboard Parameters](https://docs.devexpress.com/Dashboard/16170/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/data-analysis/dashboard-parameters/pass-parameter-values)
 
 ## More Examples
 
